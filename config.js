@@ -12,3 +12,12 @@ window.WEDDING = {
   menu: "",        // her satır bir yemek
   notes: ""        // her satır: Başlık | Metin
 };
+// LCV yanıtları bu Google Formu'na (Sheets'te görülebilir) gider.
+window.GFORM = {
+  id: "1FAIpQLSdiCXaj4GthN7LryDtS5zNBUUemRqv8eDBd3-SVi-Els-jX_A",
+  name: "entry.1848985138",
+  status: "entry.139706458",
+  count: "entry.805038069",
+  diet: "entry.1900050768",
+  note: "entry.1049036455"
+};

@@ -255,6 +255,20 @@ $("rsvpForm").onsubmit=async e=>{
   const wa=(ev.wa||"").replace(/\D/g,"");
   $("waLink").href="https://wa.me/"+wa+"?text="+encodeURIComponent(waText(r));
   $("gSend").disabled=true; st.textContent="Gönderiliyor...";
+  const gf=window.GFORM;
+  if(gf&&gf.id){
+    const ascii=s=>s.replace(/ü/g,"u").replace(/ğ/g,"g").replace(/ı/g,"i").replace(/ş/g,"s").replace(/Ü/g,"U");
+    const p=new URLSearchParams();
+    p.set(gf.name,r.name);
+    p.set(gf.status,r.status==="yes"?"Katiliyorum":"Katilamiyorum");
+    if(r.status==="yes"){p.set(gf.count,r.count+" kisi");p.set(gf.diet,ascii(r.diet.replace(" (nota yazın)","")))}
+    if(r.note)p.set(gf.note,r.note);
+    try{
+      await fetch("https://docs.google.com/forms/d/e/"+gf.id+"/formResponse",{method:"POST",mode:"no-cors",body:p});
+      st.textContent="Yanıtınız iletildi, teşekkür ederiz.";st.classList.add("ok");sfxYes();
+      $("rsvpForm").reset();$("gSend").disabled=false;return;
+    }catch(_){}
+  }
   st.textContent="Yanıtınız hazır. Göndermek için aşağıdaki WhatsApp düğmesine dokunun.";st.classList.add("ok");$("fallback").hidden=false;sfxYes();
   $("gSend").disabled=false;
 };
