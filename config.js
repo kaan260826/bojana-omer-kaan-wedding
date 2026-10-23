@@ -10,7 +10,7 @@ window.WEDDING = {
   fam: "BOGDAN & JASMINA\nSELÇUK & HATİCE TUĞBA",
   prog: "19:30 | Misafir karşılama\n20:00 | Nikah töreni\n20:30 | İlk dans\n21:00 | Yemek\n22:00 | Pasta kesimi\n22:15 | Eğlence ve dans",     // her satır: 19:30 | Nikah töreni
   menu: "",        // her satır bir yemek
-  notes: ""        // her satır: Başlık | Metin
+  notes: "Varış | Karşılama 19:30'da, nikah töreni 20:00'de başlayacak. Mümkünse karşılama saatinde salonda olmanızı rica ederiz.\nKıyafet | Özel bir kıyafet şartı yok. Şık ve rahat bir görünüm yeterli.\nUlaşım | Yukarıdaki \"Yol tarifi al\" düğmesiyle salona kolayca ulaşabilirsiniz.\nLCV | Katılıp katılamayacağınızı bu sayfanın altındaki formdan bildirmenizi rica ederiz."      // her satır: Başlık | Metin
 };
 // LCV yanıtları bu Google Formu'na (Sheets'te görülebilir) gider.
 window.GFORM = {
