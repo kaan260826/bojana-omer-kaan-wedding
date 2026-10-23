@@ -8,7 +8,7 @@ window.WEDDING = {
   wa: "905439133000",        // WhatsApp numarası: 905xxxxxxxxx
   msg: "Hayatımızın en güzel gününde sizleri de aramızda görmekten mutluluk duyarız.",
   fam: "BOGDAN & JASMINA\nSELÇUK & HATİCE TUĞBA",
-  prog: "",        // her satır: 19:30 | Nikah töreni
+  prog: "19:30 | Misafir karşılama\n20:00 | Nikah töreni\n20:30 | İlk dans\n21:00 | Yemek\n22:00 | Pasta kesimi\n22:15 | Eğlence ve dans",     // her satır: 19:30 | Nikah töreni
   menu: "",        // her satır bir yemek
   notes: ""        // her satır: Başlık | Metin
 };
